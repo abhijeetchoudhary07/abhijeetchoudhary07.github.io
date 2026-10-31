@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.arrowescape.linepuzzle",
+      "sha256_cert_fingerprints": [
+        "83:F6:9D:15:B7:9E:8E:81:8A:C2:99:6A:B9:61:FD:AA:B0:1D:5A:2F:41:F0:A9:CD:96:95:CB:4D:A5:31:DE:49"
+      ]
+    }
+  }
+]
