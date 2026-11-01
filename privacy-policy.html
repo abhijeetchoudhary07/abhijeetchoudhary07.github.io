@@ -3,119 +3,334 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy - Arrow Escape</title>
+    <title>Privacy Policy – Arrow Escape: Line Puzzle Game</title>
+    <meta name="description" content="Privacy Policy for Arrow Escape: Line Puzzle Game, an Android app by Abhijeet Pratap Dhaka." />
     <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f7fafc;
+        --card: #ffffff;
+        --fg: #1a202c;
+        --muted: #4a5568;
+        --heading: #2d3748;
+        --accent: #2b6cb0;
+        --badge-bg: #ebf8ff;
+        --border: #edf2f7;
+        --shadow: rgba(0, 0, 0, 0.06);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1a202c;
+          --card: #2d3748;
+          --fg: #e2e8f0;
+          --muted: #a0aec0;
+          --heading: #e2e8f0;
+          --accent: #63b3ed;
+          --badge-bg: #2a4365;
+          --border: #4a5568;
+          --shadow: rgba(0, 0, 0, 0.3);
+        }
+      }
+      * { box-sizing: border-box; }
       body {
-        font-family:
-          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        line-height: 1.6;
-        color: #1a202c;
-        background: #f7fafc;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.7;
+        color: var(--fg);
+        background: var(--bg);
         margin: 0;
         padding: 24px 16px;
       }
       .container {
         max-width: 760px;
         margin: 0 auto;
-        background: #ffffff;
+        background: var(--card);
         padding: 36px 32px;
         border-radius: 16px;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 4px 16px var(--shadow);
       }
       h1 {
-        color: #2b6cb0;
+        color: var(--accent);
         margin-top: 0;
+        font-size: 1.75rem;
       }
       h2 {
-        color: #2d3748;
-        margin-top: 28px;
-        border-bottom: 2px solid #edf2f7;
+        color: var(--heading);
+        margin-top: 32px;
+        border-bottom: 2px solid var(--border);
         padding-bottom: 8px;
+        font-size: 1.15rem;
       }
-      p,
-      li {
-        color: #4a5568;
-      }
+      p, li { color: var(--muted); }
+      ul { padding-left: 20px; }
+      li { margin-bottom: 6px; }
+      a { color: var(--accent); }
+      strong { color: var(--fg); }
       .badge {
         display: inline-block;
-        background: #ebf8ff;
-        color: #2b6cb0;
+        background: var(--badge-bg);
+        color: var(--accent);
         padding: 4px 12px;
         border-radius: 999px;
         font-size: 13px;
         font-weight: 600;
         margin-bottom: 16px;
       }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+        font-size: 0.95rem;
+      }
+      th, td {
+        text-align: left;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border);
+        color: var(--muted);
+      }
+      th {
+        color: var(--heading);
+        font-weight: 600;
+      }
+      .back-link {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <span class="badge">Effective Date: November 2026</span>
+      <a class="back-link" href="/">&larr; Back to home</a>
+      <span class="badge">Effective Date: 1 November 2026</span>
       <h1>Privacy Policy for Arrow Escape</h1>
       <p>
-        This Privacy Policy applies to the mobile application <strong>Arrow Escape</strong> ("the
-        Game", "we", "us", or "our"). We take user privacy seriously. This document clearly
-        describes how data is handled when you download and play our game.
+        This Privacy Policy applies to the mobile application <strong>Arrow Escape: Line Puzzle Game</strong>
+        (package name: <code>com.arrowescape.linepuzzle</code>), developed and published by
+        <strong>Abhijeet Pratap Dhaka</strong> ("the Developer", "we", "us", or "our").
+        We take user privacy seriously. This document clearly describes what data is collected
+        when you download and play our game, how it is used, and with whom it is shared.
+      </p>
+      <p>
+        By downloading, installing, or using Arrow Escape you agree to this Privacy Policy.
+        If you do not agree, please uninstall the app.
       </p>
 
-      <h2>1. Target Audience & Children's Privacy</h2>
+      <!-- 1 -->
+      <h2>1. Target Audience &amp; Children's Privacy</h2>
       <p>
-        Arrow Escape is designed and intended for a general audience aged
-        <strong>13 and above</strong>. It does not knowingly collect personal information from
-        children under 13. standard Google AdMob rules apply and the application does not
-        participate in the Google Play Designed for Families programme.
+        Arrow Escape is designed for a <strong>general audience aged 13 and above</strong>.
+        The app is <strong>not</strong> directed at children under 13 and does not knowingly collect
+        personal information from anyone under 13. It does not participate in the Google Play
+        "Designed for Families" programme. Standard Google AdMob policies apply.
+      </p>
+      <p>
+        If we learn that we have inadvertently collected personal information from a child
+        under 13, we will delete it promptly. Parents or guardians who believe their child has
+        provided information may contact us at the email listed below.
       </p>
 
-      <h2>2. Information We Collect Automatically</h2>
+      <!-- 2 -->
+      <h2>2. Information We Collect</h2>
       <p>
-        To deliver a smooth puzzle experience, analyze stability, and show relevant ads, third-party
-        SDKs integrated into the game collect certain technical signals:
+        Arrow Escape does <strong>not</strong> require you to create an account, enter your name,
+        email, phone number, or any other personal information to play. We do not collect
+        photos, contacts, location, camera, microphone, files, or health data.
+      </p>
+      <p>
+        The following data is collected <strong>automatically</strong> through third-party SDKs
+        integrated into the app:
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Data type</th>
+            <th>Collected by</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Advertising ID (AAID)</strong></td>
+            <td>Google AdMob</td>
+            <td>Ad delivery, fraud detection, frequency capping</td>
+          </tr>
+          <tr>
+            <td><strong>App interactions</strong> (level start, level clear, hints used, ads watched)</td>
+            <td>Google Firebase Analytics</td>
+            <td>Understanding gameplay patterns, tuning difficulty curves</td>
+          </tr>
+          <tr>
+            <td><strong>Crash logs &amp; diagnostics</strong> (stack traces, device model, OS version)</td>
+            <td>Google Firebase Crashlytics</td>
+            <td>Identifying and fixing crashes to maintain stability</td>
+          </tr>
+          <tr>
+            <td><strong>Anonymous user ID</strong></td>
+            <td>Google Firebase Authentication</td>
+            <td>Leaderboard scores and challenge progress (no personal info required)</td>
+          </tr>
+          <tr>
+            <td><strong>Remote configuration values</strong></td>
+            <td>Google Firebase Remote Config</td>
+            <td>Adjusting ad frequency and game balance without an app update</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        <strong>Locally stored data:</strong> Your game progress (levels completed, stars, coins,
+        unlocked skins, streak, settings preferences) is saved on your device using encrypted
+        key-value storage (<code>@capacitor/preferences</code>). This data is never transmitted
+        to our servers.
+      </p>
+
+      <!-- 3 -->
+      <h2>3. How We Use the Data</h2>
+      <ul>
+        <li><strong>To serve ads:</strong> Display banner, interstitial, and rewarded ads via Google AdMob.</li>
+        <li><strong>To improve the game:</strong> Analyse anonymous gameplay telemetry to adjust
+          difficulty, fix bugs, and plan new content.</li>
+        <li><strong>To maintain stability:</strong> Monitor crash-free session rates and resolve
+          issues quickly.</li>
+        <li><strong>To power leaderboards and challenges:</strong> Store anonymous scores in
+          Firebase so players can compare results.</li>
+        <li><strong>To schedule local reminders:</strong> If you opt in, the app uses on-device
+          local notifications to remind you of the daily puzzle. No data leaves your device for this.</li>
+      </ul>
+
+      <!-- 4 -->
+      <h2>4. Data Sharing &amp; Third-Party Services</h2>
+      <p>
+        We do <strong>not</strong> sell your data. Data is shared only with the following third-party
+        service providers, solely for the purposes described above:
       </p>
       <ul>
         <li>
-          <strong>Device Identifiers & Advertising ID:</strong> Used by Google AdMob for ad
-          delivery, fraud detection, and frequency capping.
+          <strong>Google AdMob</strong> (advertising) —
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
         </li>
         <li>
-          <strong>App Activity & Gameplay Telemetry:</strong> Level start, level clear, hints used,
-          and progression stats gathered anonymously via Firebase Analytics.
+          <strong>Google Firebase</strong> (Analytics, Crashlytics, Authentication, Remote Config) —
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy &amp; Security</a>
         </li>
         <li>
-          <strong>Crash Logs & Performance Metrics:</strong> Diagnostic stack traces and device
-          model information gathered via Firebase Crashlytics to resolve crashes and maintain a
-          99.5%+ crash-free session rate.
+          <strong>Google Play Billing</strong> (in-app purchases) —
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+        </li>
+      </ul>
+      <p>
+        These services may collect device identifiers and technical data in accordance with
+        their own privacy policies linked above. We encourage you to review them.
+      </p>
+      <p>
+        We do not share data with any data brokers, social networks, or other third parties
+        beyond those listed.
+      </p>
+
+      <!-- 5 -->
+      <h2>5. Advertising &amp; Consent (GDPR / UMP)</h2>
+      <p>
+        For users located in the <strong>European Economic Area (EEA)</strong>, the
+        <strong>United Kingdom</strong>, and <strong>Switzerland</strong>, the app integrates
+        Google's certified <strong>User Messaging Platform (UMP)</strong> to collect consent
+        before serving personalised ads or collecting identifiers.
+      </p>
+      <p>
+        You can review or change your consent preferences at any time through the
+        <strong>"Privacy Options"</strong> button in the app's Settings screen.
+      </p>
+      <p>
+        If consent is not granted, only limited, non-personalised ads will be shown where
+        permitted by law.
+      </p>
+
+      <!-- 6 -->
+      <h2>6. In-App Purchases</h2>
+      <p>
+        Optional in-app purchases (such as "Remove Ads" and coin packs) are processed
+        exclusively through <strong>Google Play Billing</strong>. We do not collect, store, or
+        have access to your credit card number, bank account details, or any financial
+        information. Purchase entitlements are stored securely on your device and verified
+        via Google Play.
+      </p>
+
+      <!-- 7 -->
+      <h2>7. Data Security</h2>
+      <p>
+        All communication between the app and backend services is encrypted using
+        <strong>HTTPS / TLS</strong>. Local game data is stored using encrypted key-value
+        preferences on your device. While we use industry-standard measures to protect your
+        information, no method of electronic storage or transmission is 100% secure.
+      </p>
+
+      <!-- 8 -->
+      <h2>8. Data Retention</h2>
+      <p>
+        Crash and analytics data in Firebase is retained according to
+        <a href="https://firebase.google.com/support/privacy#data_retention" target="_blank" rel="noopener">Google Firebase's data retention policies</a>.
+        AdMob may retain advertising identifiers as described in Google's privacy policy.
+        Local game progress is retained on your device until you uninstall the app or clear
+        its data.
+      </p>
+
+      <!-- 9 -->
+      <h2>9. Your Rights &amp; Choices</h2>
+      <ul>
+        <li>
+          <strong>Opt out of personalised ads:</strong> Open your device's
+          <em>Settings &rarr; Google &rarr; Ads</em> and enable "Opt out of Ads Personalization",
+          or use the in-app Privacy Options button.
+        </li>
+        <li>
+          <strong>Reset your Advertising ID:</strong> Use your device's Google settings to reset
+          or delete your Advertising ID at any time.
+        </li>
+        <li>
+          <strong>Disable analytics:</strong> You may limit Firebase Analytics collection by
+          disabling usage-data sharing in your device settings.
+        </li>
+        <li>
+          <strong>Delete local data:</strong> Uninstalling the app or clearing its storage in your
+          device settings will remove all locally saved progress.
+        </li>
+        <li>
+          <strong>Request server-side data deletion:</strong> Contact us at the email below and
+          we will delete any analytics or crash data associated with your device within 30 days.
+        </li>
+        <li>
+          <strong>GDPR / EEA users:</strong> You have the right to access, correct, or delete your
+          personal data, restrict processing, and lodge a complaint with your local data
+          protection authority.
         </li>
       </ul>
 
-      <h2>3. Advertising and Google UMP Consent</h2>
+      <!-- 10 -->
+      <h2>10. Links to Other Sites</h2>
       <p>
-        The game utilizes <strong>Google AdMob</strong> to display ads (Banners, Interstitials, and
-        Rewarded Ads). For users located in the European Economic Area (EEA), the United Kingdom,
-        and Switzerland, the application integrates Google's certified
-        <strong>User Messaging Platform (UMP)</strong> SDK. Users can review or modify their consent
-        preferences at any time via the "Privacy Options" button in the Settings screen.
+        The app may contain links to external websites or services (for example, the Google
+        Play Store page). We are not responsible for the content or privacy practices of
+        third-party sites. We encourage you to read their privacy policies.
       </p>
 
-      <h2>4. In-App Purchases</h2>
+      <!-- 11 -->
+      <h2>11. Changes to This Privacy Policy</h2>
       <p>
-        In-app purchases (such as "Remove Ads" and Coin Packs) are processed exclusively through
-        Google Play Billing. We do not store, process, or have access to your credit card or
-        financial details. Purchase entitlements are securely stored on your device.
+        We may update this Privacy Policy from time to time. When we make material changes,
+        we will update the "Effective Date" at the top of this page and, where practicable,
+        notify users through the app. Your continued use of Arrow Escape after any changes
+        constitutes acceptance of the updated policy.
       </p>
 
-      <h2>5. Data Security & Retention</h2>
+      <!-- 12 -->
+      <h2>12. Contact Us</h2>
       <p>
-        All communication with backend services is encrypted using HTTPS / TLS. Game progress,
-        unlocked skins, and coin balances are saved locally on your device storage via encrypted
-        key-value preferences.
+        If you have any questions, concerns, or data-related requests regarding this Privacy
+        Policy, please contact us at:
       </p>
-
-      <h2>6. Contact Us</h2>
       <p>
-        If you have questions or concerns about this privacy policy, please contact our developer
-        support team at:
-        <br />
-        <strong>Email:</strong> Officialpostflow360&#64;gmail.com
+        <strong>Developer:</strong> Abhijeet Pratap Dhaka<br />
+        <strong>Email:</strong> <a href="mailto:Officialpostflow360@gmail.com">Officialpostflow360&#64;gmail.com</a>
       </p>
     </div>
   </body>
